@@ -33,16 +33,16 @@ export default class Address {
 
   validate(): boolean {
     if (this._street.length === 0) {
-      throw new Error("Street is mandatory");
+      throw new Error("Street is required");
     }
     if (this._number.length === 0) {
-      throw new Error("Number is mandatory");
+      throw new Error("Number is required");
     }
     if (this._city.length === 0) {
-      throw new Error("City is mandatory");
+      throw new Error("City is required");
     }
     if (this._zipcode.length === 0) {
-      throw new Error("Zipcode is mandatory");
+      throw new Error("Zipcode is required");
     }
 
     return true;
