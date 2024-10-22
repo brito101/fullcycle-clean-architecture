@@ -1,10 +1,8 @@
-# Full Cycle 3.0
+# Full Cycle 3.0 - Clean Architecture
 
-## Clean Architecture
+## Challenges:
 
-### Challenges
-
-#### 1 - Da mesma forma que fizemos a criação dos use cases realizando as operações: "create", "find", "list", "update" para "Customer", faça:
+### 1 - Da mesma forma que fizemos a criação dos use cases realizando as operações: "create", "find", "list", "update" para "Customer", faça:
 
 - Crie as operações mencionadas acima para nossa entidade: "Product".
 - Implemente os testes de unidade e integração nos quatro use cases.
@@ -18,7 +16,17 @@
 
 <img src="images/challenge2.png" />
 
-### Dependencies history
+### 3 - Aprendemos que o notification pattern nos auxilia como um container acumulador de erros para que possamos de uma forma mais simples retornarmos nossos erros todos de uma vez evitando assim a geração excessiva de exceções.
+
+- Nesse desafio você deverá utilizar o padrão notification em nossa entidade Products. Não deixe de realizar os testes automatizados.
+- Adicione um teste que acumule dois erros ao mesmo tempo.
+- A linguagem de programação para este desafio é TypeScript
+
+<img src="images/challenge3.png" />
+
+<hr />
+
+## Dependencies history
 
 - `npm i typescript --save-dev`
 - `npx tsc --init`
@@ -34,7 +42,7 @@
 - `npm i nodemon`
 - `npm i -D @types/supertest`
 
-### Commands
+## Commands
 
 - `npm test`
 - `npm run dev`

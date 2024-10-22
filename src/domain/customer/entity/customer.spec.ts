@@ -1,15 +1,19 @@
-
 import Address from "../value-object/address";
 import Customer from "./customer";
 
-
 describe("Customer unit test", () => {
   it("should throw error when id is empty", () => {
-    expect(() => new Customer("", "John")).toThrow("Id is required");
+    expect(() => new Customer("", "John")).toThrow("customer: Id is required");
   });
 
   it("should throw error when name is empty", () => {
-    expect(() => new Customer("1", "")).toThrow("Name is required");
+    expect(() => new Customer("1", "")).toThrow("customer: Name is required");
+  });
+
+  it("should throw error when id and name are empty", () => {
+    expect(() => {
+      let customer = new Customer("", "");
+    }).toThrow("customer: Id is required,customer: Name is required");
   });
 
   it("should change name", () => {
