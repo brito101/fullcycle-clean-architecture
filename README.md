@@ -49,6 +49,8 @@
 - `npm i nodemon`
 - `npm i -D @types/supertest`
 - `npm i -S yup`
+- `npm i jstoxml`
+- `npm i -D @types/jstoxml`
 
 ## Commands
 
